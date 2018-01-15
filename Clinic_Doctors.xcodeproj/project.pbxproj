@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B31825A200A047C00AFCF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B318259200A047C00AFCF18 /* AppDelegate.swift */; };
+		1B31825C200A047C00AFCF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31825B200A047C00AFCF18 /* ViewController.swift */; };
+		1B31825F200A047C00AFCF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B31825D200A047C00AFCF18 /* Main.storyboard */; };
+		1B318261200A047C00AFCF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B318260200A047C00AFCF18 /* Assets.xcassets */; };
+		1B318264200A047C00AFCF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B318262200A047C00AFCF18 /* LaunchScreen.storyboard */; };
+		667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B318256200A047C00AFCF18 /* Clinic_Doctors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinic_Doctors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B318259200A047C00AFCF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B31825B200A047C00AFCF18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B31825E200A047C00AFCF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B318260200A047C00AFCF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B318263200A047C00AFCF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B318265200A047C00AFCF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.release.xcconfig"; sourceTree = "<group>"; };
+		5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Doctors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B318253200A047C00AFCF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B31824D200A047C00AFCF18 = {
+			isa = PBXGroup;
+			children = (
+				1B318258200A047C00AFCF18 /* Clinic_Doctors */,
+				1B318257200A047C00AFCF18 /* Products */,
+				67A76740583EB1B383FD530D /* Pods */,
+				DB36448621881A8880878AB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B318257200A047C00AFCF18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B318256200A047C00AFCF18 /* Clinic_Doctors.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B318258200A047C00AFCF18 /* Clinic_Doctors */ = {
+			isa = PBXGroup;
+			children = (
+				1B31827D200A053E00AFCF18 /* App Delegate */,
+				1B318276200A053600AFCF18 /* Modules */,
+				1B318275200A052E00AFCF18 /* Manager */,
+				1B318274200A052700AFCF18 /* Utils */,
+				1B31826F200A051E00AFCF18 /* Base */,
+				1B31826E200A051600AFCF18 /* ThirdParty */,
+				1B31826D200A050800AFCF18 /* Define */,
+				1B31826C200A04FC00AFCF18 /* Resource */,
+				1B31826B200A048200AFCF18 /* Support Files */,
+			);
+			path = Clinic_Doctors;
+			sourceTree = "<group>";
+		};
+		1B31826B200A048200AFCF18 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B318259200A047C00AFCF18 /* AppDelegate.swift */,
+				1B31825B200A047C00AFCF18 /* ViewController.swift */,
+				1B31825D200A047C00AFCF18 /* Main.storyboard */,
+				1B318260200A047C00AFCF18 /* Assets.xcassets */,
+				1B318262200A047C00AFCF18 /* LaunchScreen.storyboard */,
+				1B318265200A047C00AFCF18 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		1B31826C200A04FC00AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B31826D200A050800AFCF18 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		1B31826E200A051600AFCF18 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		1B31826F200A051E00AFCF18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1B318270200A051E00AFCF18 /* NavigationController */,
+				1B318271200A051E00AFCF18 /* WrbViewController */,
+				1B318272200A051E00AFCF18 /* RootViewController */,
+				1B318273200A051E00AFCF18 /* TabbarController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1B318270200A051E00AFCF18 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		1B318271200A051E00AFCF18 /* WrbViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WrbViewController;
+			sourceTree = "<group>";
+		};
+		1B318272200A051E00AFCF18 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		1B318273200A051E00AFCF18 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		1B318274200A052700AFCF18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1B318275200A052E00AFCF18 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1B318276200A053600AFCF18 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1B3182B0200A072200AFCF18 /* Doctor */,
+				1B31827E200A072200AFCF18 /* Patient */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1B31827D200A053E00AFCF18 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1B31827E200A072200AFCF18 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				1B31827F200A072200AFCF18 /* ClinicHistory */,
+				1B318286200A072200AFCF18 /* ClinicParties */,
+				1B31828D200A072200AFCF18 /* ClinicHome */,
+				1B318294200A072200AFCF18 /* ClinicPersional */,
+				1B31829B200A072200AFCF18 /* ClinicLogin */,
+				1B3182A2200A072200AFCF18 /* ClinicMessage */,
+				1B3182A9200A072200AFCF18 /* ClinicDoctor */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		1B31827F200A072200AFCF18 /* ClinicHistory */ = {
+			isa = PBXGroup;
+			children = (
+				1B318280200A072200AFCF18 /* Controller */,
+				1B318281200A072200AFCF18 /* Model */,
+				1B318282200A072200AFCF18 /* View */,
+				1B318284200A072200AFCF18 /* Service */,
+				1B318285200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicHistory;
+			sourceTree = "<group>";
+		};
+		1B318280200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B318281200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B318282200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B318284200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B318285200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B318286200A072200AFCF18 /* ClinicParties */ = {
+			isa = PBXGroup;
+			children = (
+				1B318287200A072200AFCF18 /* Controller */,
+				1B318288200A072200AFCF18 /* Model */,
+				1B318289200A072200AFCF18 /* View */,
+				1B31828B200A072200AFCF18 /* Service */,
+				1B31828C200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicParties;
+			sourceTree = "<group>";
+		};
+		1B318287200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B318288200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B318289200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B31828B200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B31828C200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B31828D200A072200AFCF18 /* ClinicHome */ = {
+			isa = PBXGroup;
+			children = (
+				1B31828E200A072200AFCF18 /* Controller */,
+				1B31828F200A072200AFCF18 /* Model */,
+				1B318290200A072200AFCF18 /* View */,
+				1B318292200A072200AFCF18 /* Service */,
+				1B318293200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicHome;
+			sourceTree = "<group>";
+		};
+		1B31828E200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B31828F200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B318290200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B318292200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B318293200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B318294200A072200AFCF18 /* ClinicPersional */ = {
+			isa = PBXGroup;
+			children = (
+				1B318295200A072200AFCF18 /* Controller */,
+				1B318296200A072200AFCF18 /* Model */,
+				1B318297200A072200AFCF18 /* View */,
+				1B318299200A072200AFCF18 /* Service */,
+				1B31829A200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicPersional;
+			sourceTree = "<group>";
+		};
+		1B318295200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B318296200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B318297200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B318299200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B31829A200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B31829B200A072200AFCF18 /* ClinicLogin */ = {
+			isa = PBXGroup;
+			children = (
+				1B31829C200A072200AFCF18 /* Controller */,
+				1B31829D200A072200AFCF18 /* Model */,
+				1B31829E200A072200AFCF18 /* View */,
+				1B3182A0200A072200AFCF18 /* Service */,
+				1B3182A1200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicLogin;
+			sourceTree = "<group>";
+		};
+		1B31829C200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B31829D200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B31829E200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3182A0200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B3182A1200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B3182A2200A072200AFCF18 /* ClinicMessage */ = {
+			isa = PBXGroup;
+			children = (
+				1B3182A3200A072200AFCF18 /* Controller */,
+				1B3182A4200A072200AFCF18 /* Model */,
+				1B3182A5200A072200AFCF18 /* View */,
+				1B3182A7200A072200AFCF18 /* Service */,
+				1B3182A8200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicMessage;
+			sourceTree = "<group>";
+		};
+		1B3182A3200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B3182A4200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B3182A5200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3182A7200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B3182A8200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B3182A9200A072200AFCF18 /* ClinicDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				1B3182AA200A072200AFCF18 /* Controller */,
+				1B3182AB200A072200AFCF18 /* Model */,
+				1B3182AC200A072200AFCF18 /* View */,
+				1B3182AE200A072200AFCF18 /* Service */,
+				1B3182AF200A072200AFCF18 /* Resource */,
+			);
+			path = ClinicDoctor;
+			sourceTree = "<group>";
+		};
+		1B3182AA200A072200AFCF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B3182AB200A072200AFCF18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B3182AC200A072200AFCF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3182AE200A072200AFCF18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B3182AF200A072200AFCF18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B3182B0200A072200AFCF18 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		67A76740583EB1B383FD530D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */,
+				1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB36448621881A8880878AB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B318255200A047C00AFCF18 /* Clinic_Doctors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B318268200A047C00AFCF18 /* Build configuration list for PBXNativeTarget "Clinic_Doctors" */;
+			buildPhases = (
+				12B23FD586FED20E612BC717 /* [CP] Check Pods Manifest.lock */,
+				1B318252200A047C00AFCF18 /* Sources */,
+				1B318253200A047C00AFCF18 /* Frameworks */,
+				1B318254200A047C00AFCF18 /* Resources */,
+				8AE5C939BA87F8A0BC114D22 /* [CP] Embed Pods Frameworks */,
+				017EE65C6466E50C14DC68A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clinic_Doctors;
+			productName = Clinic_Doctors;
+			productReference = 1B318256200A047C00AFCF18 /* Clinic_Doctors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B31824E200A047C00AFCF18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mengchen Liu";
+				TargetAttributes = {
+					1B318255200A047C00AFCF18 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1B318251200A047C00AFCF18 /* Build configuration list for PBXProject "Clinic_Doctors" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B31824D200A047C00AFCF18;
+			productRefGroup = 1B318257200A047C00AFCF18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B318255200A047C00AFCF18 /* Clinic_Doctors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B318254200A047C00AFCF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B318264200A047C00AFCF18 /* LaunchScreen.storyboard in Resources */,
+				1B318261200A047C00AFCF18 /* Assets.xcassets in Resources */,
+				1B31825F200A047C00AFCF18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017EE65C6466E50C14DC68A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12B23FD586FED20E612BC717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clinic_Doctors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE5C939BA87F8A0BC114D22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Onboard/Onboard.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Onboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B318252200A047C00AFCF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B31825C200A047C00AFCF18 /* ViewController.swift in Sources */,
+				1B31825A200A047C00AFCF18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B31825D200A047C00AFCF18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B31825E200A047C00AFCF18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B318262200A047C00AFCF18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B318263200A047C00AFCF18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B318266200A047C00AFCF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B318267200A047C00AFCF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B318269200A047C00AFCF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHHWWKLNX2;
+				INFOPLIST_FILE = Clinic_Doctors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eclinic.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1B31826A200A047C00AFCF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHHWWKLNX2;
+				INFOPLIST_FILE = Clinic_Doctors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eclinic.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B318251200A047C00AFCF18 /* Build configuration list for PBXProject "Clinic_Doctors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B318266200A047C00AFCF18 /* Debug */,
+				1B318267200A047C00AFCF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B318268200A047C00AFCF18 /* Build configuration list for PBXNativeTarget "Clinic_Doctors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B318269200A047C00AFCF18 /* Debug */,
+				1B31826A200A047C00AFCF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B31824E200A047C00AFCF18 /* Project object */;
+}

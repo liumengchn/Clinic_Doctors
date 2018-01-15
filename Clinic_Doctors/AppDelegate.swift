@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //进入登陆界面
+        self.window?.rootViewController = PatientLoginViewController()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

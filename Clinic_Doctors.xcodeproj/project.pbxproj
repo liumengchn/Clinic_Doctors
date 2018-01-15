@@ -14,11 +14,11 @@
 		1B318264200A047C00AFCF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B318262200A047C00AFCF18 /* LaunchScreen.storyboard */; };
 		1B6CD3AD200CECB300FD2313 /* AppDelegate+AppServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3AC200CECB300FD2313 /* AppDelegate+AppServer.swift */; };
 		1B6CD3AF200CECCF00FD2313 /* PatientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3AE200CECCF00FD2313 /* PatientLoginViewController.swift */; };
-		1B6CD3B1200CED1A00FD2313 /* PatientUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3B0200CED1A00FD2313 /* PatientUserModel.swift */; };
 		1B6CD3B3200CED3B00FD2313 /* PatientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3B2200CED3B00FD2313 /* PatientRegisterViewController.swift */; };
 		1B6CD3B5200CED5800FD2313 /* PatientAccountServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3B4200CED5800FD2313 /* PatientAccountServer.swift */; };
 		1B6CD3B7200CED6000FD2313 /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3B6200CED6000FD2313 /* a.swift */; };
 		1B6CD3B9200CED8200FD2313 /* tu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1B6CD3B8200CED8200FD2313 /* tu.gif */; };
+		1B6CD3BB200CEE3500FD2313 /* PatientRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3BA200CEE3500FD2313 /* PatientRootViewController.swift */; };
 		667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +32,11 @@
 		1B318265200A047C00AFCF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6CD3AC200CECB300FD2313 /* AppDelegate+AppServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppServer.swift"; sourceTree = "<group>"; };
 		1B6CD3AE200CECCF00FD2313 /* PatientLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientLoginViewController.swift; sourceTree = "<group>"; };
-		1B6CD3B0200CED1A00FD2313 /* PatientUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientUserModel.swift; sourceTree = "<group>"; };
 		1B6CD3B2200CED3B00FD2313 /* PatientRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRegisterViewController.swift; sourceTree = "<group>"; };
 		1B6CD3B4200CED5800FD2313 /* PatientAccountServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAccountServer.swift; sourceTree = "<group>"; };
 		1B6CD3B6200CED6000FD2313 /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
 		1B6CD3B8200CED8200FD2313 /* tu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tu.gif; sourceTree = "<group>"; };
+		1B6CD3BA200CEE3500FD2313 /* PatientRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRootViewController.swift; sourceTree = "<group>"; };
 		1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.release.xcconfig"; sourceTree = "<group>"; };
 		5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Doctors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				1B318280200A072200AFCF18 /* Controller */,
-				1B318281200A072200AFCF18 /* Model */,
 				1B318282200A072200AFCF18 /* View */,
 				1B318284200A072200AFCF18 /* Service */,
 				1B318285200A072200AFCF18 /* Resource */,
@@ -223,13 +222,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B318281200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B318282200A072200AFCF18 /* View */ = {
@@ -257,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				1B318287200A072200AFCF18 /* Controller */,
-				1B318288200A072200AFCF18 /* Model */,
 				1B318289200A072200AFCF18 /* View */,
 				1B31828B200A072200AFCF18 /* Service */,
 				1B31828C200A072200AFCF18 /* Resource */,
@@ -270,13 +261,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B318288200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B318289200A072200AFCF18 /* View */ = {
@@ -304,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				1B31828E200A072200AFCF18 /* Controller */,
-				1B31828F200A072200AFCF18 /* Model */,
 				1B318290200A072200AFCF18 /* View */,
 				1B318292200A072200AFCF18 /* Service */,
 				1B318293200A072200AFCF18 /* Resource */,
@@ -315,15 +298,9 @@
 		1B31828E200A072200AFCF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3BA200CEE3500FD2313 /* PatientRootViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B31828F200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B318290200A072200AFCF18 /* View */ = {
@@ -398,7 +375,6 @@
 			isa = PBXGroup;
 			children = (
 				1B31829C200A072200AFCF18 /* Controller */,
-				1B31829D200A072200AFCF18 /* Model */,
 				1B31829E200A072200AFCF18 /* View */,
 				1B3182A0200A072200AFCF18 /* Service */,
 				1B3182A1200A072200AFCF18 /* Resource */,
@@ -413,14 +389,6 @@
 				1B6CD3B2200CED3B00FD2313 /* PatientRegisterViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B31829D200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1B6CD3B0200CED1A00FD2313 /* PatientUserModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B31829E200A072200AFCF18 /* View */ = {
@@ -451,7 +419,6 @@
 			isa = PBXGroup;
 			children = (
 				1B3182A3200A072200AFCF18 /* Controller */,
-				1B3182A4200A072200AFCF18 /* Model */,
 				1B3182A5200A072200AFCF18 /* View */,
 				1B3182A7200A072200AFCF18 /* Service */,
 				1B3182A8200A072200AFCF18 /* Resource */,
@@ -464,13 +431,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B3182A4200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B3182A5200A072200AFCF18 /* View */ = {
@@ -498,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				1B3182AA200A072200AFCF18 /* Controller */,
-				1B3182AB200A072200AFCF18 /* Model */,
 				1B3182AC200A072200AFCF18 /* View */,
 				1B3182AE200A072200AFCF18 /* Service */,
 				1B3182AF200A072200AFCF18 /* Resource */,
@@ -511,13 +470,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1B3182AB200A072200AFCF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1B3182AC200A072200AFCF18 /* View */ = {
@@ -709,9 +661,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6CD3BB200CEE3500FD2313 /* PatientRootViewController.swift in Sources */,
 				1B6CD3B5200CED5800FD2313 /* PatientAccountServer.swift in Sources */,
 				1B6CD3AF200CECCF00FD2313 /* PatientLoginViewController.swift in Sources */,
-				1B6CD3B1200CED1A00FD2313 /* PatientUserModel.swift in Sources */,
 				1B6CD3B7200CED6000FD2313 /* a.swift in Sources */,
 				1B6CD3AD200CECB300FD2313 /* AppDelegate+AppServer.swift in Sources */,
 				1B31825C200A047C00AFCF18 /* ViewController.swift in Sources */,

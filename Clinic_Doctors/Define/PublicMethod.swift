@@ -130,6 +130,28 @@ class PublicMethod: NSObject {
         }
     }
     
+    /** 设置 textField placeholder颜色 */
+    func setTextFieldPlaceholderColor(_ textField: UITextField, _ icon_leftView: String, _ placeholder_string: String, _ placeholder_color: UIColor, _  font_size: CGFloat) -> Void { //label 公共设置
+        
+        textField.placeholder = placeholder_string
+        
+        textField.autocapitalizationType = UITextAutocapitalizationType.none
+        
+        textField.font = setFontSize(original_size: font_size)
+        textField.clearButtonMode = UITextFieldViewMode.whileEditing //clear button
+        textField.textColor = UIColor.white //text color
+        
+        if icon_leftView != "" {
+            
+            let image = UIImage(named: icon_leftView)
+            textField.leftView = UIImageView(image: image)
+            textField.leftViewMode = UITextFieldViewMode.always
+        }
+        
+        textField.setValue( setFontSize(original_size: font_size), forKeyPath: "_placeholderLabel.font") //placeholder字体大小
+        textField.setValue(placeholder_color, forKeyPath: "_placeholderLabel.textColor") //placeholder字体颜色
+    }
+    
     
     /** 获取沙盒文件夹路径 */
     func getDocumentsDirectory() -> String {
@@ -150,10 +172,11 @@ class PublicMethod: NSObject {
         
         if max_width == 0 {
             
+            print("宽度=0")
             max_width_value = screen_size.width * 0.6
             
         }else {
-            
+            print("自定义宽度 = \(max_width)")
             max_width_value = max_width
         }
         

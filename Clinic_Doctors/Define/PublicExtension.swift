@@ -8,6 +8,21 @@
 
 import UIKit
 
+//MARK: UINavigationController方法延展
+extension UINavigationController {
+    
+    /** 自定义导航栏属性 */
+    func customNavigationBar() -> Void {
+        
+        //导航栏背景颜色
+        self.navigationBar.barTintColor = patient_theme_color
+        //导航栏文字颜色
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        //导航栏按钮颜色
+        self.navigationBar.tintColor = UIColor.white
+    }
+}
+
 //MARK: UIImage 方法延展(添加)
 extension UIImage {
     
@@ -42,7 +57,18 @@ extension UIImage {
  */
 extension UIButton { //自定义图文位置
     
-    @objc func set(image anImage: UIImage?, title: String,titlePosition: UIViewContentMode, additionalSpacing: CGFloat, state: UIControlState) {
+    /** 动态设定文字变化宽度 */
+    func dynamicSetButtonTitleAndImage(_ title_string: String , _ max_width: CGFloat , _ font_size: CGFloat) -> Void {
+        
+        let text_string_size = public_method.getTextStringSize(string: title_string, max_width: max_width, font_size: font_size)
+        
+        self.frame.size = text_string_size
+        
+        self.set(UIImage(named: "icon_suofang")?.toScaleImage(scaleSize: 0.7), title_string, UIViewContentMode.left, public_method.setFitSize(original: 10), UIControlState.normal)
+    }
+    
+    /** 自定义图文位置 */
+    @objc func set(_ anImage: UIImage?,_ title: String,_ titlePosition: UIViewContentMode,_ additionalSpacing: CGFloat,_ state: UIControlState) {
         
         self.imageView?.contentMode = UIViewContentMode.center
         self.setImage(anImage, for: state)

@@ -26,19 +26,22 @@ let device_current_version = Bundle.main.infoDictionary!["CFBundleShortVersionSt
 let screen_size = UIScreen.main.bounds.size
 
 /** 屏幕宽度比例 以 iphone 6 为原始屏幕比例 */
-let screen_fit_width = screen_size.width / 375
+let screen_fit_width            = screen_size.width / 375
 
 /** 状态栏颜色 */
-let status_color = public_method.setRGBColor(red: 101, green: 101, blue: 101, alpha: 1.0)
+let status_color                = public_method.setRGBColor(red: 101, green: 101, blue: 101, alpha: 1.0)
 
 /** 病人端主题颜色 */
-let patient_theme_color = public_method.setRGBColor(red: 53, green: 213, blue: 174, alpha: 1.0)
+let patient_theme_color         = public_method.setRGBColor(red: 53, green: 213, blue: 174, alpha: 1.0)
+
+/** 注册页面主题颜色 */
+let register_theme_color        = public_method.setRGBColor(red: 160, green: 160, blue: 160, alpha: 1.0)
 
 /** user登陆后信息保存位置 */
-let patient_user_plist_path = public_method.getDocumentsDirectory() + "/" + "Users.plist"
+let patient_user_plist_path     = public_method.getDocumentsDirectory() + "/" + "Users.plist"
 
 /** 诊所信息 数据库地址 */
-let patient_realm_path = public_method.getDocumentsDirectory() + "/" + "Clinic.realm"
+let patient_realm_path          = public_method.getDocumentsDirectory() + "/" + "Clinic.realm"
 
 
 

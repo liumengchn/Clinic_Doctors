@@ -22,6 +22,8 @@
 		1B6CD3BE200D12CB00FD2313 /* PublicParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3BD200D12CB00FD2313 /* PublicParameter.swift */; };
 		1B6CD3C0200D150500FD2313 /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3BF200D150500FD2313 /* PublicMethod.swift */; };
 		1B6CD3C6200D18D200FD2313 /* PublicExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3C5200D18D200FD2313 /* PublicExtension.swift */; };
+		1B6CD3C8200D901800FD2313 /* PatientCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3C7200D901800FD2313 /* PatientCustomTextField.swift */; };
+		1B6CD3CA200D944C00FD2313 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6CD3C9200D944100FD2313 /* MobileCoreServices.framework */; };
 		667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		1B6CD3BD200D12CB00FD2313 /* PublicParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicParameter.swift; sourceTree = "<group>"; };
 		1B6CD3BF200D150500FD2313 /* PublicMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMethod.swift; sourceTree = "<group>"; };
 		1B6CD3C5200D18D200FD2313 /* PublicExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicExtension.swift; sourceTree = "<group>"; };
+		1B6CD3C7200D901800FD2313 /* PatientCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCustomTextField.swift; sourceTree = "<group>"; };
+		1B6CD3C9200D944100FD2313 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.release.xcconfig"; sourceTree = "<group>"; };
 		5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Doctors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6CD3CA200D944C00FD2313 /* MobileCoreServices.framework in Frameworks */,
 				667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +178,7 @@
 		1B318274200A052700AFCF18 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3C7200D901800FD2313 /* PatientCustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 		DB36448621881A8880878AB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3C9200D944100FD2313 /* MobileCoreServices.framework */,
 				5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */,
 			);
 			name = Frameworks;
@@ -682,6 +689,7 @@
 				1B6CD3BB200CEE3500FD2313 /* PatientRootViewController.swift in Sources */,
 				1B6CD3B5200CED5800FD2313 /* PatientAccountServer.swift in Sources */,
 				1B6CD3AF200CECCF00FD2313 /* PatientLoginViewController.swift in Sources */,
+				1B6CD3C8200D901800FD2313 /* PatientCustomTextField.swift in Sources */,
 				1B6CD3C6200D18D200FD2313 /* PublicExtension.swift in Sources */,
 				1B6CD3B7200CED6000FD2313 /* a.swift in Sources */,
 				1B6CD3AD200CECB300FD2313 /* AppDelegate+AppServer.swift in Sources */,

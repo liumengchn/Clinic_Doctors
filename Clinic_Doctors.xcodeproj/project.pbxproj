@@ -24,6 +24,12 @@
 		1B6CD3C6200D18D200FD2313 /* PublicExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3C5200D18D200FD2313 /* PublicExtension.swift */; };
 		1B6CD3C8200D901800FD2313 /* PatientCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3C7200D901800FD2313 /* PatientCustomTextField.swift */; };
 		1B6CD3CA200D944C00FD2313 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6CD3C9200D944100FD2313 /* MobileCoreServices.framework */; };
+		1B6CD3D0200E283500FD2313 /* PatientClinicParitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3CF200E283500FD2313 /* PatientClinicParitiesViewController.swift */; };
+		1B6CD3D2200E294E00FD2313 /* PatientClinicParitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3D1200E294E00FD2313 /* PatientClinicParitiesTableViewCell.swift */; };
+		1B6CD3D4200E3E0800FD2313 /* PatientClinicDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3D3200E3E0800FD2313 /* PatientClinicDoctorViewController.swift */; };
+		1B6CD3D6200E3EAC00FD2313 /* PatientClinicDoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3D5200E3EAC00FD2313 /* PatientClinicDoctorTableViewCell.swift */; };
+		1B6CD3D8200E45B300FD2313 /* PatientClinicHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3D7200E45B300FD2313 /* PatientClinicHistoryViewController.swift */; };
+		1B6CD3DA200E45CF00FD2313 /* PatientClinicHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD3D9200E45CF00FD2313 /* PatientClinicHistoryTableViewCell.swift */; };
 		667F877CBEFCAEDD956C1D4A /* Pods_Clinic_Doctors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +53,12 @@
 		1B6CD3C5200D18D200FD2313 /* PublicExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicExtension.swift; sourceTree = "<group>"; };
 		1B6CD3C7200D901800FD2313 /* PatientCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCustomTextField.swift; sourceTree = "<group>"; };
 		1B6CD3C9200D944100FD2313 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1B6CD3CF200E283500FD2313 /* PatientClinicParitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicParitiesViewController.swift; sourceTree = "<group>"; };
+		1B6CD3D1200E294E00FD2313 /* PatientClinicParitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicParitiesTableViewCell.swift; sourceTree = "<group>"; };
+		1B6CD3D3200E3E0800FD2313 /* PatientClinicDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicDoctorViewController.swift; sourceTree = "<group>"; };
+		1B6CD3D5200E3EAC00FD2313 /* PatientClinicDoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicDoctorTableViewCell.swift; sourceTree = "<group>"; };
+		1B6CD3D7200E45B300FD2313 /* PatientClinicHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicHistoryViewController.swift; sourceTree = "<group>"; };
+		1B6CD3D9200E45CF00FD2313 /* PatientClinicHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientClinicHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		1CA33B18B05864DDB90994A8 /* Pods-Clinic_Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.release.xcconfig"; sourceTree = "<group>"; };
 		5F4F0D2A7C97A89210CC9187 /* Pods_Clinic_Doctors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Doctors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9828E1C4A4CC84128F28BD /* Pods-Clinic_Doctors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic_Doctors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic_Doctors/Pods-Clinic_Doctors.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +248,7 @@
 		1B318280200A072200AFCF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3D7200E45B300FD2313 /* PatientClinicHistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +256,7 @@
 		1B318282200A072200AFCF18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3D9200E45CF00FD2313 /* PatientClinicHistoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 		1B318287200A072200AFCF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3CF200E283500FD2313 /* PatientClinicParitiesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +297,7 @@
 		1B318289200A072200AFCF18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3D1200E294E00FD2313 /* PatientClinicParitiesTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,6 +500,7 @@
 		1B3182AA200A072200AFCF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3D3200E3E0800FD2313 /* PatientClinicDoctorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,6 +508,7 @@
 		1B3182AC200A072200AFCF18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CD3D5200E3EAC00FD2313 /* PatientClinicDoctorTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -688,8 +706,14 @@
 				1B6CD3BE200D12CB00FD2313 /* PublicParameter.swift in Sources */,
 				1B6CD3BB200CEE3500FD2313 /* PatientRootViewController.swift in Sources */,
 				1B6CD3B5200CED5800FD2313 /* PatientAccountServer.swift in Sources */,
+				1B6CD3D0200E283500FD2313 /* PatientClinicParitiesViewController.swift in Sources */,
+				1B6CD3D8200E45B300FD2313 /* PatientClinicHistoryViewController.swift in Sources */,
 				1B6CD3AF200CECCF00FD2313 /* PatientLoginViewController.swift in Sources */,
 				1B6CD3C8200D901800FD2313 /* PatientCustomTextField.swift in Sources */,
+				1B6CD3D6200E3EAC00FD2313 /* PatientClinicDoctorTableViewCell.swift in Sources */,
+				1B6CD3D2200E294E00FD2313 /* PatientClinicParitiesTableViewCell.swift in Sources */,
+				1B6CD3D4200E3E0800FD2313 /* PatientClinicDoctorViewController.swift in Sources */,
+				1B6CD3DA200E45CF00FD2313 /* PatientClinicHistoryTableViewCell.swift in Sources */,
 				1B6CD3C6200D18D200FD2313 /* PublicExtension.swift in Sources */,
 				1B6CD3B7200CED6000FD2313 /* a.swift in Sources */,
 				1B6CD3AD200CECB300FD2313 /* AppDelegate+AppServer.swift in Sources */,

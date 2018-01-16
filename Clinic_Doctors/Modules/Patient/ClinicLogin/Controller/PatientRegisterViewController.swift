@@ -22,7 +22,7 @@ class PatientRegisterViewController: UIViewController {
     var button_register         : UIButton?
     var button_back             : UIButton?
     
-    var remainingSeconds                       = 0 { //倒计时秒
+    var remainingSeconds         = 0 { //倒计时秒
         willSet {
             
             var title_string = "\(newValue)秒后重新获取"

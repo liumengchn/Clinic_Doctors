@@ -61,9 +61,9 @@ extension UIButton { //自定义图文位置
     func dynamicSetButtonTitleAndImage(_ title_string: String , _ max_width: CGFloat , _ font_size: CGFloat) -> Void {
         
         let text_string_size = public_method.getTextStringSize(string: title_string, max_width: max_width, font_size: font_size)
-        
+
         self.frame.size = text_string_size
-        
+                
         self.set(UIImage(named: "icon_suofang")?.toScaleImage(scaleSize: 0.7), title_string, UIViewContentMode.left, public_method.setFitSize(original: 10), UIControlState.normal)
     }
     

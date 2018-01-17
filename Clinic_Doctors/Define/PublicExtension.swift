@@ -26,6 +26,44 @@ extension UINavigationController {
 //MARK: UIImage 方法延展(添加)
 extension UIImage {
     
+    //生成圆形图片
+    func toCircle() -> UIImage {
+        //取最短边长
+        let shotest = min(self.size.width, self.size.height)
+        //输出尺寸
+        let outputRect = CGRect(x: 0, y: 0, width: shotest, height: shotest)
+        //开始图片处理上下文（由于输出的图不会进行缩放，所以缩放因子等于屏幕的scale即可）
+        UIGraphicsBeginImageContextWithOptions(outputRect.size, false, 0)
+        let context = UIGraphicsGetCurrentContext()!
+        //添加圆形裁剪区域
+        context.addEllipse(in: outputRect)
+        context.clip()
+        //绘制图片
+        self.draw(in: CGRect(x: (shotest-self.size.width)/2,
+                             y: (shotest-self.size.height)/2,
+                             width: self.size.width,
+                             height: self.size.height))
+        //获得处理后的图片
+        let maskedImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return maskedImage
+    }
+    
+    /** 更改图片颜色
+        image =  image?.tint(color: UIColor.green, blendMode: CGBlendMode.destinationIn)
+     */
+    func tint(color: UIColor , blendMode: CGBlendMode) -> UIImage { //更改图片颜色
+        
+        let drawRect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        color.setFill()
+        UIRectFill(drawRect)
+        draw(in: drawRect, blendMode: blendMode, alpha: 1.0)
+        let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return tintedImage!
+    }
+    
     /** 重设UIImage大小 */
     func toReSizeImage(resize: CGSize) -> UIImage { //重设UIImage大小
         
@@ -64,7 +102,7 @@ extension UIButton { //自定义图文位置
 
         self.frame.size = text_string_size
                 
-        self.set(UIImage(named: "icon_suofang")?.toScaleImage(scaleSize: 0.7), title_string, UIViewContentMode.left, public_method.setFitSize(original: 10), UIControlState.normal)
+        self.set(UIImage(named: "icon_suofang")?.toScaleImage(scaleSize: 0.8), title_string, UIViewContentMode.left, public_method.setFitSize(original: 10), UIControlState.normal)
     }
     
     /** 自定义图文位置 */

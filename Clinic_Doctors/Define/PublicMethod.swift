@@ -172,11 +172,10 @@ class PublicMethod: NSObject {
         
         if max_width == 0 {
             
-            print("宽度=0")
             max_width_value = screen_size.width * 0.6
             
         }else {
-            print("自定义宽度 = \(max_width)")
+            
             max_width_value = max_width
         }
         
@@ -187,7 +186,7 @@ class PublicMethod: NSObject {
                                                          context: nil)
         
         
-        return CGSize(width: size.width, height: size.height)
+        return CGSize(width: size.width + setFitSize(original: 10), height: size.height)
     }
     
     /** 获取下一个响应者 */

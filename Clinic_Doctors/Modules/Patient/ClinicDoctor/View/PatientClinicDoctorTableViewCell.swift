@@ -44,52 +44,53 @@ class PatientClinicDoctorTableViewCell: UITableViewCell {
         
         let font_color = register_theme_color
         
-        self.patient_doctor_headerImage                 = UIImageView()
-        self.patient_doctor_headerImage?.backgroundColor = UIColor.orange
+        self.patient_doctor_headerImage                     = UIImageView()
+        self.patient_doctor_headerImage?.backgroundColor    = UIColor.orange
+        self.patient_doctor_headerImage?.image              = UIImage(named: "icon_header_img")?.toCircle()
         self.patient_doctor_headerImage?.layer.cornerRadius = screen_size.width * 0.16 * 0.50
         self.contentView.addSubview(self.patient_doctor_headerImage!)
         
-        self.patient_doctor_name                        = UILabel()
-        self.patient_doctor_name?.text                  = "邓志勇而yfjbbk"
-        self.patient_doctor_name?.font                  = public_method.setFontSize(original_size: 16)
+        self.patient_doctor_name                            = UILabel()
+        self.patient_doctor_name?.text                      = "邓志勇而yfjbbk"
+        self.patient_doctor_name?.font                      = public_method.setFontSize(original_size: 16)
         self.contentView.addSubview(self.patient_doctor_name!)
         
-        self.patient_doctor_sex                         = UILabel()
-        self.patient_doctor_sex?.text                   = "男"
-        self.patient_doctor_sex?.textColor              = font_color
-        self.patient_doctor_sex?.font           = public_method.setFontSize(original_size: 14)
+        self.patient_doctor_sex                             = UILabel()
+        self.patient_doctor_sex?.text                       = "男"
+        self.patient_doctor_sex?.textColor                  = font_color
+        self.patient_doctor_sex?.font                       = public_method.setFontSize(original_size: 14)
         self.contentView.addSubview(self.patient_doctor_sex!)
         
-        self.patient_doctor_year                        = UILabel()
-        self.patient_doctor_year?.text                  = "100岁"
-        self.patient_doctor_year?.textColor             = font_color
-        self.patient_doctor_year?.font                  = public_method.setFontSize(original_size: 14)
+        self.patient_doctor_year                            = UILabel()
+        self.patient_doctor_year?.text                      = "100岁"
+        self.patient_doctor_year?.textColor                 = font_color
+        self.patient_doctor_year?.font                      = public_method.setFontSize(original_size: 14)
         self.contentView.addSubview(self.patient_doctor_year!)
         
-        self.patient_doctor_workyear                    = UILabel()
-        self.patient_doctor_workyear?.text              = "从医年限  100年"
-        self.patient_doctor_workyear?.font              = public_method.setFontSize(original_size: 11)
+        self.patient_doctor_workyear                        = UILabel()
+        self.patient_doctor_workyear?.text                  = "从医年限  100年"
+        self.patient_doctor_workyear?.font                  = public_method.setFontSize(original_size: 11)
         self.contentView.addSubview(self.patient_doctor_workyear!)
         
-        self.patient_button_contact                     = UIButton(type: UIButtonType.custom)
-        self.patient_button_contact?.backgroundColor    = UIColor.orange
-        self.patient_button_contact?.titleLabel?.font   = public_method.setFontSize(original_size: 14)
-        self.patient_button_contact?.layer.cornerRadius = public_method.setFitSize(original: 12.5)
+        self.patient_button_contact                         = UIButton(type: UIButtonType.custom)
+        self.patient_button_contact?.backgroundColor        = UIColor.orange
+        self.patient_button_contact?.titleLabel?.font       = public_method.setFontSize(original_size: 14)
+        self.patient_button_contact?.layer.cornerRadius     = public_method.setFitSize(original: 12.5)
         self.patient_button_contact?.setTitle("咨询", for: UIControlState.normal)
         self.contentView.addSubview(self.patient_button_contact!)
         
-        self.patient_doctor_description = UILabel()
-        self.patient_doctor_description?.text = "主治：冠心病、奇葩病、牛逼病、还有什么病我也不知道"
-        self.patient_doctor_description?.textColor = font_color
-        self.patient_doctor_description?.font = public_method.setFontSize(original_size: 14)
+        self.patient_doctor_description                     = UILabel()
+        self.patient_doctor_description?.text               = "主治：冠心病、奇葩病、牛逼病、还有什么病我也不知道"
+        self.patient_doctor_description?.textColor          = font_color
+        self.patient_doctor_description?.font               = public_method.setFontSize(original_size: 14)
         self.contentView.addSubview(self.patient_doctor_description!)
         
         self.patient_doctor_headerImage?.snp.makeConstraints({ (make) in
             
             make.left.equalTo(self.contentView).offset(public_method.setFitSize(original: 13.5))
             make.centerY.equalTo(self.contentView)
-            make.width.equalTo(self.contentView).multipliedBy(0.16)
-            make.height.equalTo(self.contentView.snp.width).multipliedBy(0.16)
+            make.width.equalTo(screen_size.width * 0.16)
+            make.height.equalTo(screen_size.width * 0.16)
         })
         
         self.patient_doctor_name?.snp.makeConstraints({ (make) in

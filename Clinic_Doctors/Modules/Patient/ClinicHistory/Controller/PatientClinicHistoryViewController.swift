@@ -58,13 +58,17 @@ class PatientClinicHistoryViewController: UIViewController , UITableViewDataSour
         
         let cell = PatientClinicHistoryTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: swift_cell)
         
+        cell.patient_history_prescribeNumber?.text = String(indexPath.row)
+        cell.patient_history_type?.text?.append(String(indexPath.row))
+        cell.patient_history_doctor?.text?.append(String(indexPath.row))
+        cell.patient_history_clinic?.text?.append(String(indexPath.row))
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return public_method.setFitSize(original: 130.5)
+        return public_method.setFitSize(original: 140)
     }
     
     //MARK: tableView delegate

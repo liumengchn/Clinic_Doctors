@@ -75,6 +75,11 @@ class PatientClinicHistoryViewController: UIViewController , UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let clinicParitiesViewController = PatientClinicHistoryDetailViewController()
+        clinicParitiesViewController.title = "就诊详情"
+        clinicParitiesViewController.view.backgroundColor = UIColor.white
+        self.navigationController?.pushViewController( clinicParitiesViewController, animated: true)
     }
 
 }

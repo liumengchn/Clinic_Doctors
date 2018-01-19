@@ -14,6 +14,8 @@ target 'Clinic_Doctors' do
     pod 'SwiftyJSON', '~> 4.0' #JSON解析
     pod 'RealmSwift', '~> 3.0' #realm数据库
 
+#    pod 'YYKit', '~> 1.0'
+
   # Pods for Clinic_Doctors
 
 end

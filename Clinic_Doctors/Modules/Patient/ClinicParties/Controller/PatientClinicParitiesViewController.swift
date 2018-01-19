@@ -11,7 +11,7 @@ import UIKit
 class PatientClinicParitiesViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
 
     var tableView:          UITableView?
-    var dataSource:         NSArray?
+    var dataSource:         Array<PatientClinicParitiesModel>?
     
     let swift_cell          = "PatientClinicParitiesViewControllerTableViewCell"
     
@@ -20,12 +20,35 @@ class PatientClinicParitiesViewController: UIViewController , UITableViewDataSou
 
         // Do any additional setup after loading the view.
         
+        self.initializationDataSource()
         self.initializationBaseView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initializationDataSource() -> Void {
+        
+        DispatchQueue.global().async {
+            
+            for index in 0 ... 50 {
+                
+                let paritiesmodel = PatientClinicParitiesModel()
+                paritiesmodel.patient_clinic_name_string = "四川省中医大省医院 \(index)"
+                paritiesmodel.patient_clinic_score_string = "8.8 分"
+                paritiesmodel.patient_clinic_address_string = "我也不知道他在上面地方，知道了我也不会告诉你"
+                
+                self.dataSource?.append(paritiesmodel)
+                
+                DispatchQueue.main.async {
+                    
+                    self.tableView?.reloadData()
+                }
+                
+            }
+        }
     }
     
     //MARK: 初始化基本控件
@@ -58,6 +81,10 @@ class PatientClinicParitiesViewController: UIViewController , UITableViewDataSou
         
         let cell = PatientClinicParitiesTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: swift_cell)
         
+        if indexPath.row == 3 {
+            
+            cell.patient_clinic_name?.text = "四川大学第二附属医院"
+        }
         
         return cell
     }
